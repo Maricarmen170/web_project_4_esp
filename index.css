@@ -1,0 +1,10 @@
+@import url(./Blocks/inter-web/inter-web.css);
+/*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Istok+Web:wght@400;700&display=swap');*/
+/*BODY*/
+@import url(./Blocks/body/body.css);
+/*PAGE*/
+@import url(./Blocks/page/page.css);
+/*HEADER*/
+@import url(./Blocks/header/header.css);
+@import url(./Blocks/header/__logo/header__logo.css);
+
