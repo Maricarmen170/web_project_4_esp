@@ -34,3 +34,6 @@
 @import url(./Blocks/element/__footer-text/element__footer-text.css);
 /*ICON-LIKE*/
 @import url(./Blocks/icon-like/icon-like.css);
+/*FOOTER*/
+@import url(./Blocks/footer/__content/footer__content.css);
+@import url(./Blocks/footer/__content-text/footer__content-text.css);
