@@ -1,0 +1,7 @@
+.element{
+    max-width: 17.625rem;
+    max-height: 22.5625rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}

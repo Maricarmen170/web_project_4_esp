@@ -1,0 +1,10 @@
+.element__footer-photo{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+}
+@media screen and (min-width:320px)and (max-width:1279px) {
+    .element__footer-photo{
+        min-height: 4.9375rem;
+    }   
+}
