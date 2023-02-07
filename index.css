@@ -1,4 +1,4 @@
-
+@import url(./Blocks/styles/normalize.css);
 @import url(./Blocks/inter-web/inter-web.css);
 /*@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Istok+Web:wght@400;700&display=swap');*/
 /*BODY*/
@@ -11,6 +11,7 @@
 /*PROFILE*/
 @import url(./Blocks/profile/profile.css);
 @import url(./Blocks/profile/__image/profile__image.css);
+@import url(./Blocks/profile/__image-avatar/profile__image-avatar.css);
 @import url(./Blocks/profile/__info/profile__info.css);
 @import url(./Blocks/profile/__text/profile__text.css);
 @import url(./Blocks/profile/__name/profile__name.css);
