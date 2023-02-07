@@ -1,4 +1,4 @@
-let buttonEdit = document.querySelector('.profile__edit')
+const buttonEdit = document.querySelector('.profile__edit')
 let formElement = document.querySelector('.popup')
 let buttonClose = document.querySelector('.popup__close-icon')
 let buttonSubmit = document.querySelector('.popup__button')
@@ -14,9 +14,13 @@ function openPopup () {
 function closePopup () {
     formElement.classList.remove('popup__opened')
 }
+function savePopup () {
+    formElement.classList.remove('popup__opened')
+}
 
 buttonEdit.addEventListener('click',openPopup);
 buttonClose.addEventListener('click',closePopup);
+buttonSubmit.addEventListener('click',savePopup);
 
 function handleProfileFormSubmit(evt) {
     evt.preventDefault();

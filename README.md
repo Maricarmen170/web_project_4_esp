@@ -1,16 +1,32 @@
+## Bienvenido al repositorio de mi proyecto! 🤓
+
 # Proyecto 4: Alrededor de los Estados Unidos
 
-### Descripción general
+### Descripción general    
+* Introducción  
+* Tecnologías
+* Instalación
+* Enlace
+* Planes Futuros
+  
+**_Introducción_**    
+  
+Hola, mi nombre es maricarmen y desarrollé este proyecto que muestra una red social,en la que puedes editar información personal .Su funcionalidad es de tipo informativo y las caracteristicas principales son la funcion responsive y las funciones en javascript .   
+**_Tecnologías_**  
+[x]HTML
+[x]CSS
+[x]JAVASCRIPT
+[x]GIT
 
-* Figma
-* Imágenes
+**_Instalacion_**
+Para instalar el proyecto debes clonar el repositorio y luego abrir el archivo index.html en tu navegador:
 
-**Figma**
+> git clone
+> cd web_project_4_es
 
-* [Enlace al proyecto en Figma](https://www.figma.com/file/LDMgqWesKpQkIwhOfEBuTS/WEB%2C-Sprint-5%3A-Around-The-U.S.-%7C-desktop-%2B-mobile?node-id=0%3A1)
+**_Enlace_**
+* [Enlace al proyecto en GitHub]https://github.com/Maricarmen170/web_project_4_esp  
+  
+**_Planes Futuros_**
 
-**Imágenes**
-
-A la hora de trabajar, debes optar por exportar las imágenes directamente desde Figma; te recomendamos hacerlo para practicar más. No olvides optimizarlas [aquí](https://tinypng.com/), para que tu proyecto cargue más rápido. 
-
-¡Esperamos que te diviertas con JavaScript!
+[x] Agergarle un backend
