@@ -1,31 +1,30 @@
 const buttonEdit = document.querySelector('.profile__edit')
-let formElement = document.querySelector('.popup')
-let buttonClose = document.querySelector('.popup__close-icon')
-let buttonSubmit = document.querySelector('.popup__button')
-let inputName = document.querySelector('#name')
-let inputAbout = document.querySelector('#about')
-let profileName = document.querySelector('.profile__name')
-let profileOcupation = document.querySelector('.profile__ocupation')
+const formElement = document.querySelector('.popup')
+const buttonClose = document.querySelector('.popup__close-icon')
+const buttonSubmit = document.querySelector('.popup__button')
+const inputName = document.querySelector('#name')
+const inputAbout = document.querySelector('#about')
+const profileName = document.querySelector('.profile__name')
+const profileOcupation = document.querySelector('.profile__ocupation')
 
 function openPopup () {
-    formElement.classList.add('popup__opened')
+  formElement.classList.add('popup__opened')
 }
 
 function closePopup () {
-    formElement.classList.remove('popup__opened')
+  formElement.classList.remove('popup__opened')
 }
 function savePopup () {
-    formElement.classList.remove('popup__opened')
+  formElement.classList.remove('popup__opened')
 }
-
 buttonEdit.addEventListener('click',openPopup);
 buttonClose.addEventListener('click',closePopup);
 buttonSubmit.addEventListener('click',savePopup);
 
 function handleProfileFormSubmit(evt) {
-    evt.preventDefault();
-    profileName.textContent = inputName.value;
-    profileOcupation.textContent =inputAbout.value;
+  evt.preventDefault();
+  profileName.textContent = inputName.value;
+  profileOcupation.textContent =inputAbout.value;
 }
 buttonSubmit.addEventListener('click',handleProfileFormSubmit)
 
