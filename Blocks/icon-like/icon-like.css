@@ -1,6 +1,9 @@
 .icon-like{
-    max-width: 1.3125rem;
-    max-height: 1.1875rem;
+    width: 1.3125rem;
+    height: 1.1875rem;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;
 }
 .icon-like:hover{
     cursor: pointer;

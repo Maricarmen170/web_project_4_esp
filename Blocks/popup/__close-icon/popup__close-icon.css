@@ -1,9 +1,9 @@
-.popup__close-icon{
+.popup__close-icon {
     position: fixed;
     width: 2.5rem;
     height: 2.5rem;
     background-color: #000000;
-    left: 67.75%;
+    left: 65.75%;
     right: 30.73%;
     top: 10.1875rem;
 }

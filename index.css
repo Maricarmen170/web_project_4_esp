@@ -19,6 +19,13 @@
 @import url(./Blocks/profile/__edit/profile__edit.css);
 @import url(./Blocks/profile/__add/profile__add.css);
 @import url(./Blocks/profile/__add-button/profile__add-button.css);
+/*ADD-POPUP*/
+@import url(./Blocks/profile/__popup-add/profile__popup-add.css);
+@import url(./Blocks/profile/__popup-container/profile__popup-container.css);
+@import url(./Blocks/profile/__popup-title/profile__popup-title.css);
+@import url(./Blocks/profile/__popup-text/profile__popup-text.css);
+@import url(./Blocks/profile/__create-button/profile__create-buton.css);
+@import url(./Blocks/profile/__popup-opened/profile__popup-opened.css);
 /*POPUP*/
 @import url(./Blocks/popup/popup.css);
 @import url(./Blocks/popup/__close-icon/popup__close-icon.css);
@@ -36,6 +43,16 @@
 @import url(./Blocks/element/__footer-text/element__footer-text.css);
 /*ICON-LIKE*/
 @import url(./Blocks/icon-like/icon-like.css);
+/*ICON-REMOVE*/
+@import url(./Blocks/icon-remove/icon-remove.css);
+/*MODAL*/
+@import url(./Blocks/modal/modal.css);
+@import url(./Blocks/modal/__popup-img/modal__popup-img.css);
+@import url(./Blocks/modal/__popup-img-background/modal__popup-img-background.css);
+@import url(./Blocks/modal/__popup-img-close/modal__popup-img-close.css);
+@import url(./Blocks/modal/__popup-img-opened/modal__popup-img-opened.css);
+@import url(./Blocks/modal/__popup-img-title/modal__popup-img-title.css);
+@import url(./Blocks/modal/__popup-img-title-opened/modal__popup-img-title-opened.css);
 /*FOOTER*/
 @import url(./Blocks/footer/__content/footer__content.css);
 @import url(./Blocks/footer/__content-text/footer__content-text.css);

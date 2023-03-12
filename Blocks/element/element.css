@@ -1,4 +1,5 @@
 .element{
+    position: relative;
     max-width: 17.625rem;
     max-height: 22.5625rem;
     display: flex;

@@ -1,0 +1,9 @@
+.profile__popup-opened{
+    display: block;
+}
+@media screen and (min-width:320px)and (max-width:1279px) {
+    .profile__popup-opened{
+        width: 282px;
+        height: 322px;
+    }   
+}

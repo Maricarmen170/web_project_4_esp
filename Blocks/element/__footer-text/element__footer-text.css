@@ -1,6 +1,4 @@
 .element__footer-text{
-    display: flex;
-    justify-content: space-between;
     margin-left: 1.3125rem;
     margin-right: .9375rem;
     width: 15.375rem;

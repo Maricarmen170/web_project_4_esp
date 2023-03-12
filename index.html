@@ -25,15 +25,26 @@
                     <img src="./Blocks/images/__Vector (2).png" alt="icono de lapiz para editar">
                 </button>
             </div>
-            <div class="profile__add">
+            <!--<div class="profile__add">-->
                 <button class="profile__add-button">
                     <img src="./Blocks/images/Vector (3).png" alt="icono de agregar">
                 </button>
-            </div>
+            <!--</div>-->
+            <form method="get" class="profile__popup-add">
+                <button type="button" class="popup__close-icon" id="close-icon-cards">
+                    <img  src="./Blocks/images/__CloseIcon.png"   alt="Icono cerrar ventana">
+                </button>
+                <fieldset class="profile__popup-container">
+                    <label class="profile__popup-title">New Place</label>
+                    <input type="text" name="title" id="title" placeholder="Título" class="profile__popup-text">
+                    <input type="text" name="src" id="src" placeholder="Enlace a la imagen" class="profile__popup-text">
+                    <button type="submit" class="profile__create-button">Crear</button>
+                </fieldset>
+            </form>
         </section>
         <form method="get" class="popup">
-            <button type="button" class="popup__close-icon">
-                <img  src="./Blocks/images/__CloseIcon.png"  class="popup__close-img" alt="Icono cerrar ventana">
+            <button type="button" class="popup__close-icon" id="close-icon-popup">
+                <img  src="./Blocks/images/__CloseIcon.png"   alt="Icono cerrar ventana" >
             </button>
             <fieldset class="popup__container">
                 <label class="popup__title">Edit Profile</label>
@@ -42,10 +53,13 @@
                 <button type="submit" class="popup__button">Guardar</button>
             </fieldset>
         </form>
-        <script src="script.js"></script>
+        <script src="script.js" type="module"></script>
         <section class="elements">
-            <div class="element">
+            <!--<div class="element">
             <img class="element__image" src="./Blocks/images/__valledeyosemite.jpg" alt="valle yosemite">
+            <button type="button" class="element__image-remove">
+                <img src="./Blocks/icon-remove/__remove.png" alt="iconremove">
+            </button>
             <div class="element__footer-photo">
                 <p class="element__footer-text">Valle de Yosemite <img class="icon-like" src="./Blocks/icon-like/__iconlike.png" alt="iconolike"></p>
             </div>
@@ -79,13 +93,31 @@
             <div class="element__footer-photo">
                 <p class="element__footer-text">Lago di Braies <img class="icon-like" src="./Blocks/icon-like/__iconlike.png" alt="iconolike"></p>
             </div>
-            </div>
+            </div>-->
         </section>
         <footer class="footer">
             <div class="footer__content">
                 <p class="footer__content-text">© 2021 Alrededor de los EEUU</p>
             </div>
         </footer>
-    </div>
+        <template  id="elements-template">
+            <div class="element">
+            <img class="element__image" src=" " alt=" ">
+            <div class="remove">
+                <img class="icon-remove" src="./Blocks/images/__trash(1).png" alt="icono de bote de basura">
+            </div>
+            <div class="element__footer-photo">
+                <p class="element__footer-text"></p>
+                <img class="icon-like" src="./Blocks/images/__iconlike.png" alt="iconolike">
+            </div>
+            </div>
+        </template>
+        <div class="modal">
+            <div class="modal__popup-img">
+                    <img src="" alt=" " class="modal__popup-img-background" id="cardPopup"/>
+                    <img src="./Blocks/images/__CloseIcon.png" alt="Equis para cerrar el formulario" class="modal__popup-img-close" id="closeImgBtn"/>
+                    <p class="modal__popup-img-title" id="popupImgTitle"></p>
+            </div>
+        </div>
 </body>
 </html>
