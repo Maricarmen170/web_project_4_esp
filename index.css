@@ -20,13 +20,6 @@
 @import url(./Blocks/profile/__add/profile__add.css);
 @import url(./Blocks/profile/__add-button/profile__add-button.css);
 @import url(./Blocks/profile/__popup-close-icon/profile__popup-close-icon.css);
-/*ADD-POPUP*/
-@import url(./Blocks/profile/__popup-add/profile__popup-add.css);
-@import url(./Blocks/profile/__popup-container/profile__popup-container.css);
-@import url(./Blocks/profile/__popup-title/profile__popup-title.css);
-@import url(./Blocks/profile/__popup-text/profile__popup-text.css);
-@import url(./Blocks/profile/__create-button/profile__create-buton.css);
-@import url(./Blocks/profile/__popup-opened/profile__popup-opened.css);
 /*POPUP*/
 @import url(./Blocks/popup/popup.css);
 @import url(./Blocks/popup/__close-icon/popup__close-icon.css);
@@ -44,6 +37,7 @@
 @import url(./Blocks/element/__footer-text/element__footer-text.css);
 /*ICON-LIKE*/
 @import url(./Blocks/icon-like/icon-like.css);
+@import url(./Blocks/icon-like/_active/icon-like_active.css);
 /*ICON-REMOVE*/
 @import url(./Blocks/icon-remove/icon-remove.css);
 /*MODAL*/
@@ -57,3 +51,14 @@
 /*FOOTER*/
 @import url(./Blocks/footer/__content/footer__content.css);
 @import url(./Blocks/footer/__content-text/footer__content-text.css);
+/*INPUT ERROR*/
+@import url(./Blocks/popup/__input-error/popup__input-error.css);
+@import url(./Blocks/popup/__input-error/_active/popup__input-error_active.css);
+@import url(./Blocks/popup/__button/_inactive/popup__button_inactive.css);
+@import url(./Blocks/profile/__create-button/_inactive/profile__create-button_inactive.css);
+@import url(./Blocks/popup/__text/_type/_error/popup__text_type_error.css);
+@import url(./Blocks/profile/__popup-text/_type/_error/profile__popup-text_type_error.css);
+@import url(./Blocks/name-error/name-error.css);
+@import url(./Blocks/about-me-error/about-me-error.css);
+@import url(./Blocks/title-place-error/title-place-error.css);
+@import url(./Blocks/new-image-error/new-image-error.css);

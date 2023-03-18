@@ -25,32 +25,34 @@
                     <img src="./Blocks/images/__Vector (2).png" alt="icono de lapiz para editar">
                 </button>
             </div>
-            <!--<div class="profile__add">-->
                 <button class="profile__add-button">
-                    <img src="./Blocks/images/Vector (3).png" alt="icono de agregar"> log
+                    <img src="./Blocks/images/Vector (3).png" alt="icono de agregar"> 
                 </button>
-            <!--</div>-->
-            <form method="get" class="profile__popup-add">
+            <form method="get" class="popup" id="popup-place">
                 <button type="button" class="profile__popup-close-icon" id="close-icon-cards">
                     <img  src="./Blocks/images/__CloseIcon.png"   alt="Icono cerrar ventana">
                 </button>
-                <fieldset class="profile__popup-container">
-                    <label class="profile__popup-title">New Place</label>
-                    <input type="text" name="title" id="title" placeholder="Título" class="profile__popup-text">
-                    <input type="text" name="src" id="src" placeholder="Enlace a la imagen" class="profile__popup-text">
-                    <button type="submit" class="profile__create-button">Crear</button>
+                <fieldset class="popup__container" novalidate>
+                    <label class="popup__title">New Place</label>
+                    <input type="text" name="title" id="title" placeholder="Título" class="popup__text" minlength="2" maxlength="30" required>
+                    <span class="popup__input-error title-place-error" id="title-error"></span>
+                    <input type="url" name="src" id="link" placeholder="Enlace a la imagen" class="popup__text" required>
+                    <span class="popup__input-error new-image-error" id="link-error"></span>
+                    <button type="submit" class="popup__button" id="submit-place">Crear</button>
                 </fieldset>
             </form>
         </section>
-        <form method="get" class="popup">
+        <form method="get" class="popup" id="popup-profile">
             <button type="button" class="popup__close-icon" id="close-icon-popup">
                 <img  src="./Blocks/images/__CloseIcon.png"   alt="Icono cerrar ventana" >
             </button>
-            <fieldset class="popup__container">
+            <fieldset class="popup__container" novalidate>
                 <label class="popup__title">Edit Profile</label>
-                <input type="text" name="name" id="name" placeholder="nombre" class="popup__text">
-                <input type="text" name="about" id="about" placeholder="acerca de mi" class="popup__text">
-                <button type="submit" class="popup__button">Guardar</button>
+                <input type="text" name="name" id="name" placeholder="nombre" class="popup__text" minlength="2" maxlength="40" required>
+                <span class="popup__input-error name-error" id="name-error"></span>
+                <input type="text" name="about" id="about" placeholder="acerca de mi" class="popup__text" minlength="2" maxlength="200" required>
+                <span class="popup__input-error about-me-error" id="about-error"></span>
+                <button type="submit" class="popup__button" id="submit-profile">Guardar</button>
             </fieldset>
         </form>
         <script src="script.js" type="module"></script>
