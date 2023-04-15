@@ -1,20 +1,26 @@
 .modal__popup-img-background {
     position: relative;
     display: flex;
-    width: 75vw;
-    height: 75vh;
-    top: 250px;
-    left: 200px;
-    align-items: center;
+    max-width: 75vw;
+    max-height: 75vh;
+    /*top: 100px;
+    left: 250px;*/
+    margin: auto;
+    top: 100px;
+    /*align-items: center;
     justify-content: center;
-    object-fit: contain;
     flex-direction: column;
+    object-fit: contain;
+    object-position: center;*/
+
 }
 @media screen and (min-width:320px)and (max-width:1279px) {
     .modal__popup-img-background{
         width: 240px;
         height: 299px;
-        left: 40px;
-        top:136px;
+        /*left: 40px;
+        top:136px;*/
+        margin: auto;
+        left: 8px;
     }   
 }

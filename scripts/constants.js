@@ -1,4 +1,4 @@
-export const initialCards = [
+const initialCards = [
     {
         name: "Valle de Yosemite",
         src: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/yosemite.jpg"
