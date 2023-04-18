@@ -3,9 +3,9 @@
     height: 100vh;
     max-width: 17.625rem;
     max-height: 17.625rem;
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
-    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
 }
 .element__image-hover{
     width: 100vw;
