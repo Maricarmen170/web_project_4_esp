@@ -1,4 +1,4 @@
-.profile__popup-close-icon {
+.popup__profile-close-icon {
     position: fixed;
     width: 2.5rem;
     height: 2.5rem;
@@ -8,7 +8,7 @@
     top: 10.1875rem;
 }
 @media screen and (min-width:320px)and (max-width:1279px) {
-    .profile__popup-close-icon{
+    .popup__profile-close-icon{
         width: 1.625rem;
         height: 1.625rem;
         left: 87%;
