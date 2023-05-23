@@ -1,4 +1,4 @@
-export class FormValidator {
+class FormValidator {
     constructor(setting, formElement) {
         this._inputSelector = setting.inputSelector;
         this._submitButtonSelector = setting.submitButtonSelector;
@@ -26,7 +26,7 @@ export class FormValidator {
     });
     }
 
-    /** Lógica del formulario*/
+    /*Lógica del formulario*/
     _isValid(formElement, inputElement) {
         inputElement.validity.valid
         ? this._hideInputError(formElement, inputElement)
@@ -76,3 +76,24 @@ export class FormValidator {
     buttonElement.removeAttribute("disabled", false);
     }
 };
+
+const settingElement = {
+    inputSelector: ".popup__text",
+    submitButtonSelector: ".popup__button",
+    inactiveButtonClass: "popup__button_inactive",
+    inputErrorClass: "popup__text_type_error",
+    errorClass: "popup__input-error_active",
+};
+
+(function init() {
+    const formList = Array.from(
+        document.querySelectorAll(".popup__container")
+    );
+
+    formList.forEach((formElement) => {
+        const validatorForm = new FormValidator(settingElement, formElement);
+        validatorForm.enableValidation();
+    });
+})();
+
+

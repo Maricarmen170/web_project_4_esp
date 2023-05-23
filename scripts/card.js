@@ -1,13 +1,13 @@
-import { openModalCard } from "./utils.js"
-import {openModalTitle} from "./utils.js"
+
 
 const modalPopupImage = document.querySelector('#cardPopup')
 const modalPopupTitle = document.querySelector('#popupImgTitle')
 
 export class Card {
-    constructor(data) {
+    constructor({data, handleCardClick}){
         this._name = data.name;
         this._src = data.src;
+        this._handleCardClick = handleCardClick;
     }
     _getTemplateCard() {
         const cardElement = document
@@ -17,7 +17,7 @@ export class Card {
         .cloneNode(true);
         return cardElement
     }
-    generateCard() {
+    _generateCard() {
         this.element = this._getTemplateCard();
 
         this.cardImage = this.element.querySelector(".element__image");
@@ -36,7 +36,7 @@ export class Card {
             this._handleDeleteBtn();
         })
         this.element.querySelector(".element__image").addEventListener("click", () => {
-            this._handleOpenExpandedImage();
+            this._handleCardClick({name: this._name, src: this._src});
         })
     }
     
@@ -50,11 +50,4 @@ export class Card {
         this.element.remove();
     }
 
-    _handleOpenExpandedImage() {
-        modalPopupTitle.textContent = this._name;
-        modalPopupImage.src = this._src;
-
-        openModalCard();
-        openModalTitle();
-    }
 }
