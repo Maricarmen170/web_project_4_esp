@@ -1,8 +1,5 @@
 
 
-const modalPopupImage = document.querySelector('#cardPopup')
-const modalPopupTitle = document.querySelector('#popupImgTitle')
-
 export class Card {
     constructor({data, handleCardClick}){
         this._name = data.name;

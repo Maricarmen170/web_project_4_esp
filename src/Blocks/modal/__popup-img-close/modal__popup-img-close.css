@@ -1,8 +1,8 @@
 .modal__popup-img-close {
     position: absolute;
     z-index: 5;
-    top: 80px;
-    left: 1130px;
+    top: 60px;
+    left: 1090px;
 }
 .modal__popup-img-close:hover {
     opacity: 0.4;
@@ -10,9 +10,10 @@
     cursor: pointer;
 }
 
-@media screen and (min-width:320px)and (max-width:1279px) {
+
+@media screen and (min-width:320px)and (max-width:768px) {
     .modal__popup-img-close{
-        left: 90%;
+        left: 80%;
         right: -1.63%;
         top: 70px;
     }   

@@ -6,6 +6,7 @@ import {
     buttonEdit,
     buttonAdd
 } from "../scripts/utils.js";
+import FormValidator from "../scripts/formValidator.js";
 const initialCards = [
     {
         name: "Valle de Yosemite",
@@ -60,7 +61,7 @@ const elementsGrid = new Section({
     items: initialCards,
     renderer : (cardItem) => {
         const elementCard = createCard(cardItem)
-        elementsGrid.addCards(elementCard);
+        elementsGrid.appendItem(elementCard);
     },
 }, '.elements')
 elementsGrid.renderer();
@@ -70,7 +71,7 @@ const addNewCard = () => {
         name: inputTitle.value,
         src: inputSrc.value
     });
-    elementsGrid.addItem(elementCard)
+    elementsGrid.prependItem(elementCard)
     createPopupAdd.close();
 }
 
@@ -99,4 +100,23 @@ const userProfile = new UserInfo({
     userName: profileName,
     userJob: profileOcupation,
 })
+userProfile.setUserInfo({username:"Maricarmen", userjob:"Developer"})
 
+const settingElement = {
+    inputSelector: ".popup__text",
+    submitButtonSelector: ".popup__button",
+    inactiveButtonClass: "popup__button_inactive",
+    inputErrorClass: "popup__text_type_error",
+    errorClass: "popup__input-error_active",
+};
+
+(function init() {
+    const formList = Array.from(
+        document.querySelectorAll(".popup")
+    );
+
+    formList.forEach((formElement) => {
+        const validatorForm = new FormValidator(settingElement, formElement);
+        validatorForm.enableValidation();
+    });
+})();

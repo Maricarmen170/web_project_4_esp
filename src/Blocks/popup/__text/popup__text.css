@@ -13,7 +13,7 @@
     border-bottom: .0625rem solid #545454;
     padding: .625rem;
 }
-@media screen and (min-width:320px)and (max-width:1279px) {
+@media screen and (min-width:320px)and (max-width:768px) {
     .popup__text{
         width: 14.875rem;
         height: 1.0625rem;

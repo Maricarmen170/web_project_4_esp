@@ -10,7 +10,7 @@
     font-size: 1.125rem;
     line-height: 1.375rem;
 }
-@media screen and (min-width:320px)and (max-width:1279px) {
+@media screen and (min-width:320px)and (max-width:768px) {
     .footer__content-text{
         width: 17.625rem;
         height: .875rem;

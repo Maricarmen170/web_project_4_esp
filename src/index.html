@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alrededor de los EEUU</title>
-    <link rel="stylesheet" href="./index.css">
 </head>
 <body class="body">
     <div class="page">
@@ -18,8 +17,8 @@
             </div>
             <div class="profile__info">
                 <div class="profile__text">
-                <h2 class="profile__name">Jacques Cousteau</h2>
-                <p class="profile__ocupation">Explorador</p>
+                <h2 class="profile__name"></h2>
+                <p class="profile__ocupation"></p>
                 </div>
                 <button type="button" class="profile__edit">
                     <img src="<%= require('./Blocks/images/__Vector (2).png')%>" alt="icono de lapiz para editar">
@@ -30,7 +29,6 @@
                 </button>
             <form method="get" class="popup" id="popup-place">
                 <button type="button" class="popup__close-icon" id="close-icon-cards">
-                    <img  src="<%= require('./Blocks/images/__CloseIcon.png')%>"  alt="Icono cerrar ventana">
                 </button>
                 <fieldset class="popup__container" novalidate>
                     <label class="popup__title">New Place</label>
@@ -44,13 +42,12 @@
         </section>
         <form method="get" class="popup" id="popup-profile">
             <button type="button" class="popup__profile-close-icon" id="close-icon-popup">
-                <img  src="<%= require('./Blocks/images/__CloseIcon.png')%>"  alt="Icono cerrar ventana" >
             </button>
             <fieldset class="popup__container" novalidate>
                 <label class="popup__title">Edit Profile</label>
-                <input type="text" name="name" id="name" value="Jacques Cousteau" class="popup__text" minlength="2" maxlength="40" required>
+                <input type="text" name="name" id="name" value="Maricarmen" class="popup__text" minlength="2" maxlength="40" required>
                 <span class="popup__input-error name-error" id="name-error"></span>
-                <input type="text" name="about" id="about" value="Explorador" class="popup__text" minlength="2" maxlength="200" required>
+                <input type="text" name="about" id="about" value="Developer" class="popup__text" minlength="2" maxlength="200" required>
                 <span class="popup__input-error about-me-error" id="about-error"></span>
                 <button type="submit" class="popup__button" id="submit-profile">Guardar</button>
             </fieldset>

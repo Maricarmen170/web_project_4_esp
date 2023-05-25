@@ -7,8 +7,10 @@
     line-height: 3rem;
     font-weight: 31.25rem;
     font-size: 2.625rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-@media screen and (min-width:320px)and (max-width:1279px) {
+@media screen and (min-width:320px)and (max-width:768px) {
     .profile__name{
         min-width: 12.25rem;
         height: 1.375rem;

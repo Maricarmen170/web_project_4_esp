@@ -27,12 +27,21 @@ export default class Popup {
             evt.target.classList.contains('modal__popup-img-close')
         )
     }
-
+    
+    _handleCloseButton(evt){
+        const button =evt.target.classList.contains('popup__profile-close-icon') ||
+        evt.target.classList.contains('popup__close-icon')
+        if (button)this.close()
+    }
     setEventListeners() {
         this._popupElement.addEventListener("click", (evt) => {
             if (this._closeOnClick(evt)){
                 this.close();
             }
+        });
+
+        this._popupElement.addEventListener("click", (evt) => {
+            this._handleCloseButton(evt)
         });
     }
 }
