@@ -76,6 +76,5 @@ export default class FormValidator {
     buttonElement.removeAttribute("disabled", false);
     }
 };
-console.log("prueba")
 
 

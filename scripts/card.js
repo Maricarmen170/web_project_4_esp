@@ -1,10 +1,8 @@
-
-
 export class Card {
-    constructor({data, handleCardClick}){
+    constructor({data, modalCard}){
         this._name = data.name;
         this._src = data.src;
-        this._handleCardClick = handleCardClick;
+        this._modalCard = modalCard;
     }
     _getTemplateCard() {
         const cardElement = document
@@ -25,6 +23,9 @@ export class Card {
 
         return this.element
     }
+    _handleCardClick({name,src}) {
+        this.modalCard.open({name,src})
+    };
     _setEventListeners() {
         this.element.querySelector(".icon-like").addEventListener("click", () => {
             this._handleLikeBtn();
@@ -36,7 +37,7 @@ export class Card {
             this._handleCardClick({name: this._name, src: this._src});
         })
     }
-    
+
     _handleLikeBtn () {
         this.element
         .querySelector(".icon-like")

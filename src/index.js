@@ -7,6 +7,11 @@ import {
     buttonAdd
 } from "../scripts/utils.js";
 import FormValidator from "../scripts/formValidator.js";
+import Section from "../scripts/Section.js";
+import PopupWithForm from "../scripts/PopupWithForm.js";
+import PopupWithImage from "../scripts/PopupWithImage.js";
+import UserInfo from "../scripts/UserInfo.js";
+
 const initialCards = [
     {
         name: "Valle de Yosemite",
@@ -34,26 +39,12 @@ const initialCards = [
     }
 ];
 
-import Section from "../scripts/Section.js";
-import PopupWithForm from "../scripts/PopupWithForm.js";
-import PopupWithImage from "../scripts/PopupWithImage.js";
-import UserInfo from "../scripts/UserInfo.js";
-
-
-const inputName = document.querySelector('#name')
-const inputAbout = document.querySelector('#about')
-const inputTitle = document.querySelector('#title');
-const inputSrc = document.querySelector('#link');
-
 
 const modalCard = new PopupWithImage(".modal__popup-img");
 modalCard.setEventListeners()
 
 const createCard = (data) => {
-    const elementCard = new Card({data,
-        handleCardClick: ({name, src}) => {
-            modalCard.open({name, src})
-        } });
+    const elementCard = new Card({data,modalCard})
         return elementCard._generateCard();
 }
 
@@ -66,10 +57,10 @@ const elementsGrid = new Section({
 }, '.elements')
 elementsGrid.renderer();
 
-const addNewCard = () => {
+const addNewCard = (data) => {
     const elementCard = createCard({
-        name: inputTitle.value,
-        src: inputSrc.value
+        name: data.title,
+        src: data.src,
     });
     elementsGrid.prependItem(elementCard)
     createPopupAdd.close();
@@ -82,11 +73,15 @@ buttonAdd.addEventListener("click", () => {
     createPopupAdd.open()
 })
 
-function handleProfileFormSubmit(evt) {
-    profileName.textContent = inputName.value;
-    profileOcupation.textContent =inputAbout.value;
+const userProfile = new UserInfo({
+    userName: profileName,
+    userJob: profileOcupation,
+});
+userProfile.setUserInfo({username:"Maricarmen", userjob:"Developer"})
+
+function handleProfileFormSubmit(data) {
+    userProfile.setUserInfo({username:data.name, userjob: data.about})
     editPopup.close();
-    console.log("aqui")
 }
 
 const editPopup = new PopupWithForm("#popup-profile", handleProfileFormSubmit);
@@ -95,12 +90,6 @@ editPopup.setEventListeners();
 buttonEdit.addEventListener("click", () => {
     editPopup.open();
 })
-
-const userProfile = new UserInfo({
-    userName: profileName,
-    userJob: profileOcupation,
-})
-userProfile.setUserInfo({username:"Maricarmen", userjob:"Developer"})
 
 const settingElement = {
     inputSelector: ".popup__text",
