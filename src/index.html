@@ -13,8 +13,8 @@
         </header>
         <section class="profile">
             <img class="profile__image-avatar" src="<%= require('./Blocks/images/__imageprofile.jpg')%>"alt="avatar profile">
-            <div class="profile__image-avatar_overlay" >
-                <img class="profile__image-avatar_button" src="<%= require('./Blocks/images/__Vector (2).png')%>" alt="icono editar foto">
+            <div class="profile__image-overlay" >
+                <img class="profile__image-button" src="<%= require('./Blocks/images/__Vector (2).png')%>" alt="icono editar foto">
             </div>
             <div class="profile__info">
                 <div class="profile__text">
@@ -68,7 +68,7 @@
         <form method="get" class="popup" id="profile__img-edit">
             <button type="button" class="popup__profile-close-icon"></button>
             <fieldset class="popup__container" id="popup__img-edit_container">
-                <label class="popup__img-edit_title">Cambiar foto de perfil</label>
+                <label class="popup__img-title">Cambiar foto de perfil</label>
                 <input type="url" name="src" id="src" class="popup__text" >
                 <span id="src-error" class="popup__input-error about-me-error"></span>
                 <button type="submit" class="popup__button" id="popup__img-edit_button">Guardar</button>

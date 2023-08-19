@@ -1,4 +1,4 @@
-.profile__image-avatar_overlay {
+.profile__image-overlay {
     position: absolute;
     height: 120px;
     width: 120px;
@@ -12,12 +12,12 @@
     transition: 0.3 ease all;
 }
 
-.profile__image-avatar_overlay:hover {
+.profile__image-overlay:hover {
     opacity: 1;
 }
 
 @media screen and (min-width:320px)and (max-width:768px) {
-    .profile__image-avatar_overlay{
+    .profile__image-overlay{
         margin: 42px 100px 30px;
     }   
 }
