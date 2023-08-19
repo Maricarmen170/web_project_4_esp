@@ -19,4 +19,8 @@ export default class Section {
     appendItem(element){
         this._container.append(element);
     }
+
+    setArray(data){
+        this._initialArray = data
+    }
 }

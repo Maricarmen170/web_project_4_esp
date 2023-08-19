@@ -12,8 +12,15 @@
             <img class="header__logo" src="<%= require('./Blocks/images/__logoheader.png')%>" alt="logo">
         </header>
         <section class="profile">
-            <div class="profile__image">
+            <!--<div class="profile__image">
                 <img class="profile__image-avatar" src="<%= require('./Blocks/images/__imageprofile.jpg')%>"alt="avatar profile">
+                <button type="button" class="profile__image-avatar_button">
+                    <img src="<%= require('./Blocks/images/__Vector (2).png')%>" alt="icono editar foto">
+                </button>
+            </div>-->
+            <img class="profile__image-avatar" src="<%= require('./Blocks/images/__imageprofile.jpg')%>"alt="avatar profile">
+            <div class="profile__image-avatar_overlay" >
+                <img class="profile__image-avatar_button" src="<%= require('./Blocks/images/__Vector (2).png')%>" alt="icono editar foto">
             </div>
             <div class="profile__info">
                 <div class="profile__text">
@@ -27,6 +34,7 @@
                 <button class="profile__add-button">
                     <img src="<%= require('./Blocks/images/Vector (3).png')%>" alt="icono de agregar"> 
                 </button>
+                <!--ADD CARDS POPUP-->
             <form method="get" class="popup" id="popup-place">
                 <button type="button" class="popup__close-icon" id="close-icon-cards">
                 </button>
@@ -40,6 +48,7 @@
                 </fieldset>
             </form>
         </section>
+        <!--EDIT PROFILE POPUP-->
         <form method="get" class="popup" id="popup-profile">
             <button type="button" class="popup__profile-close-icon" id="close-icon-popup">
             </button>
@@ -50,6 +59,24 @@
                 <input type="text" name="about" id="about" value="Developer" class="popup__text" minlength="2" maxlength="200" required>
                 <span class="popup__input-error about-me-error" id="about-error"></span>
                 <button type="submit" class="popup__button" id="submit-profile">Guardar</button>
+            </fieldset>
+        </form>
+        <!--DELETE CARD POPUP-->
+        <form method="get"class="popup" id="popup__trash">
+            <button type="button" class="popup__profile-close-icon"></button>
+            <fieldset class="popup__container" id="popup__trash_container">
+                <label class="popup__trash_title">¿Estas Seguro/a?</label>
+                <button type="submit" class="popup__button" id="popup__trash_button">Si</button>
+            </fieldset>
+        </form>
+        <!--EDIT IMAGE PROFILE POPUP-->
+        <form method="get" class="popup" id="profile__img-edit">
+            <button type="button" class="popup__profile-close-icon"></button>
+            <fieldset class="popup__container" id="popup__img-edit_container">
+                <label class="popup__img-edit_title">Cambiar foto de perfil</label>
+                <input type="url" name="src" id="src" class="popup__text" >
+                <span id="src-error" class="popup__input-error about-me-error"></span>
+                <button type="submit" class="popup__button" id="popup__img-edit_button">Guardar</button>
             </fieldset>
         </form>
         <section class="elements">
@@ -63,11 +90,12 @@
             <div class="element">
             <img class="element__image" src=" " alt=" ">
             <div class="remove">
-                <img class="icon-remove" src="<%= require('./Blocks/images/__trash(1).png')%>" alt="icono de bote de basura">
+                <img class="icon-remove" id="trashButton" src="<%= require('./Blocks/images/__trash(1).png')%>" alt="icono de bote de basura">
             </div>
             <div class="element__footer-photo">
                 <p class="element__footer-text"></p>
-                <img class="icon-like" src="<%= require('./Blocks/images/__iconlike.png')%>" alt="iconolike">
+                <img class="icon-like"  id="likeButton" src="<%= require('./Blocks/images/__iconlike.png')%>" alt="iconolike">
+                <p class="icon-like_number">1</p>
             </div>
             </div>
         </template>
